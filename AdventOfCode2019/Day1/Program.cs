@@ -78,13 +78,11 @@ namespace Day1
         /// <returns>
         /// The <see cref="int"/>.
         /// </returns>
-        private static int CalculateFuel(decimal mass)
+        private static int CalculateFuel(int mass)
         {
-            var division = mass / 3;
-            var rounded = Convert.ToInt32(Math.Floor(division));
-            var subtracted = rounded - 2;
+            var fuel = (mass / 3) - 2;
 
-            return subtracted;
+            return fuel;
         }
 
         /// <summary>
@@ -119,7 +117,7 @@ namespace Day1
         /// <returns>
         /// The <see cref="int"/>.
         /// </returns>
-        private static int CalculateFuelForModule(decimal mass)
+        private static int CalculateFuelForModule(int mass)
         {
             var fuelForModule = CalculateFuel(mass);
 
