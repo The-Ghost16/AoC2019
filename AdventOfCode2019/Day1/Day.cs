@@ -22,6 +22,11 @@ namespace Day1
         protected abstract string Name { get; }
 
         /// <summary>
+        /// Gets the input.
+        /// </summary>
+        protected abstract string Input { get; }
+
+        /// <summary>
         /// The puzzle 1.
         /// </summary>
         protected abstract void Puzzle1();
